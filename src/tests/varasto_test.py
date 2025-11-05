@@ -8,7 +8,7 @@ class TestVarasto(unittest.TestCase):
         self.virhevarasto = Varasto(-10, -5) # väärillä arvoilla luotu varasto
         self.fullvarasto = Varasto(10, 11) # saldo suurempi kuin tilavuus
 
-# omat testit ------------------------------------------------------------------
+# omat testit ------------------------------------------------------------------------------------------------
 
     def test_konstruktori_luo_virheellisen_varaston_tilavuuden(self):
         self.assertAlmostEqual(self.virhevarasto.tilavuus, 0)
