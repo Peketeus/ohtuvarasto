@@ -8,7 +8,7 @@ class TestVarasto(unittest.TestCase):
         self.virhevarasto = Varasto(-10, -5) # väärillä arvoilla luotu varasto
         self.fullvarasto = Varasto(10, 11) # saldo suurempi kuin tilavuus
 
-# omat testit ---------------------------------------------------------------------------------
+# omat testit ------------------------------------------------------------------
 
     def test_konstruktori_luo_virheellisen_varaston_tilavuuden(self):
         self.assertAlmostEqual(self.virhevarasto.tilavuus, 0)
@@ -42,7 +42,7 @@ class TestVarasto(unittest.TestCase):
     def test_paljonko_tilaa(self):
         self.assertEqual(str(self.fullvarasto), "saldo = 10, vielä tilaa 0")
 
-# omien testien loppu -------------------------------------------------------------------------
+# omien testien loppu ----------------------------------------------------------
 
     def test_konstruktori_luo_tyhjan_varaston(self):
         # https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertAlmostEqual
